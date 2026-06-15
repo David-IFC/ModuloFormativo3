@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport para que el diseño sea responsive en móviles y tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web sobre combate medieval: tipos de espadas, armaduras y técnicas de lucha." />
+  <meta name="theme-color" content="#3a2a1a" />
+  <title>Acero y Honor · Combate Medieval</title>
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- ===================== CABECERA / NAVEGACIÓN ===================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="#inicio" class="logo">
+        <img src="img/escudo.svg" alt="Escudo medieval con dos espadas cruzadas" width="40" height="40" />
+        <span>Acero y Honor</span>
+      </a>
+
+      <!-- Botón hamburguesa: su comportamiento se programa en la Parte 2 (JS) -->
+      <button class="menu-boton" id="menuBoton" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="menu-boton__linea"></span>
+        <span class="menu-boton__linea"></span>
+        <span class="menu-boton__linea"></span>
+      </button>
+
+      <nav class="navegacion" id="navegacion">
+        <ul class="navegacion__lista">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#espadas">Espadas</a></li>
+          <li><a href="#armaduras">Armaduras</a></li>
+          <li><a href="#combate">Combate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HÉROE / PORTADA ===================== -->
+    <section class="hero" id="inicio">
+      <div class="contenedor hero__interior">
+        <h1 class="hero__titulo">El Arte del Combate Medieval</h1>
+        <p class="hero__texto">
+          Adéntrate en la Edad Media y descubre las armas, las armaduras y las
+          técnicas que decidieron el destino de reinos enteros en el campo de batalla.
+        </p>
+        <div class="hero__acciones">
+          <a href="#espadas" class="boton boton--principal">Ver espadas</a>
+          <a href="#armaduras" class="boton boton--secundario">Ver armaduras</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INTRODUCCIÓN ===================== -->
+    <section class="seccion seccion--intro">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Una época de hierro y valor</h2>
+        <p class="seccion__texto">
+          El combate medieval no era solo fuerza bruta: era disciplina, técnica y
+          conocimiento del equipo. Un buen guerrero debía entender qué espada empuñar,
+          qué armadura vestir y cómo moverse en la batalla. En esta web exploramos
+          los tres pilares del guerrero medieval.
+        </p>
+
+        <!-- Las tarjetas resumen se generarán dinámicamente en la Parte 2 (JS).
+             Mientras tanto mostramos un contenedor preparado para recibirlas. -->
+        <div class="tarjetas-resumen" id="tarjetasResumen">
+          <!-- Contenido dinámico -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ESPADAS ===================== -->
+    <section class="seccion seccion--espadas" id="espadas">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Tipos de espadas</h2>
+        <p class="seccion__texto">
+          Cada espada respondía a una necesidad: cortar, perforar armaduras o
+          combatir a dos manos. Estas son algunas de las más representativas.
+        </p>
+
+        <!-- Filtros: la lógica de filtrado se implementa en la Parte 2 (JS) -->
+        <div class="filtros" id="filtrosEspadas">
+          <button class="filtro filtro--activo" data-filtro="todas">Todas</button>
+          <button class="filtro" data-filtro="una-mano">Una mano</button>
+          <button class="filtro" data-filtro="dos-manos">Dos manos</button>
+          <button class="filtro" data-filtro="estoque">Estoque</button>
+        </div>
+
+        <!-- Rejilla rellenada por JS en la Parte 2 -->
+        <div class="rejilla" id="rejillaEspadas">
+          <!-- Contenido dinámico -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ARMADURAS ===================== -->
+    <section class="seccion seccion--armaduras" id="armaduras">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Tipos de armaduras</h2>
+        <p class="seccion__texto">
+          De la cota de malla a la armadura de placas completa, la protección
+          evolucionó al mismo ritmo que las armas que debía detener.
+        </p>
+
+        <!-- Rejilla rellenada por JS en la Parte 2 -->
+        <div class="rejilla" id="rejillaArmaduras">
+          <!-- Contenido dinámico -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMBATE ===================== -->
+    <section class="seccion seccion--combate" id="combate">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Técnicas de combate</h2>
+        <p class="seccion__texto">
+          La verdadera maestría estaba en el movimiento. Estas son algunas de las
+          guardias y técnicas fundamentales de la esgrima medieval.
+        </p>
+
+        <div class="combate-galeria">
+          <figure class="combate-galeria__item">
+            <img src="img/guardia.svg" alt="Guerrero en posición de guardia alta con espada larga" width="300" height="200" loading="lazy" />
+            <figcaption>Guardia alta (vom Tag): preparada para un corte descendente potente.</figcaption>
+          </figure>
+          <figure class="combate-galeria__item">
+            <img src="img/estocada.svg" alt="Guerrero ejecutando una estocada frontal con estoque" width="300" height="200" loading="lazy" />
+            <figcaption>Estocada: ataque de punta para perforar entre las placas de la armadura.</figcaption>
+          </figure>
+          <figure class="combate-galeria__item">
+            <img src="img/escudo-defensa.svg" alt="Guerrero defendiéndose tras un escudo redondo" width="300" height="200" loading="lazy" />
+            <figcaption>Defensa con escudo: bloqueo y contraataque en formación cerrada.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Contador interactivo (se programa en la Parte 2 con JS) -->
+        <div class="entrenamiento" id="entrenamiento">
+          <h3>Cuenta tus golpes de entrenamiento</h3>
+          <p class="entrenamiento__marcador">Golpes: <span id="contadorGolpes">0</span></p>
+          <div class="entrenamiento__botones">
+            <button class="boton boton--principal" id="botonGolpe">Asestar golpe</button>
+            <button class="boton boton--secundario" id="botonReset">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; <span id="anioActual">2026</span> Acero y Honor · Proyecto educativo sobre combate medieval.</p>
+      <p class="pie__estado" id="estadoConexion">Estado de conexión: comprobando…</p>
+    </div>
+  </footer>
+
+  <!-- Los scripts JS se añadirán en la Parte 2 -->
+</body>
+</html>

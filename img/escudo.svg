@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Escudo con espadas cruzadas">
+  <path d="M32 4 L56 12 V32 C56 48 44 56 32 60 C20 56 8 48 8 32 V12 Z" fill="#322619" stroke="#c9a227" stroke-width="2"/>
+  <line x1="20" y1="20" x2="44" y2="44" stroke="#b8c0c9" stroke-width="3"/>
+  <line x1="44" y1="20" x2="20" y2="44" stroke="#b8c0c9" stroke-width="3"/>
+  <circle cx="32" cy="32" r="4" fill="#c9a227"/>
+</svg>

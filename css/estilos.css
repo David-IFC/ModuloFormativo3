@@ -1,0 +1,522 @@
+/* =========================================================
+   ESTILOS PRINCIPALES · Acero y Honor (Combate Medieval)
+   Diseño responsive con enfoque "mobile first".
+   ========================================================= */
+
+/* ---------- Variables de color y tipografía ---------- */
+:root {
+  --color-fondo: #1c1712;
+  --color-fondo-claro: #2a2118;
+  --color-tarjeta: #322619;
+  --color-texto: #ece3d4;
+  --color-texto-suave: #c2b29a;
+  --color-acento: #c9a227;       /* dorado tipo metal pulido */
+  --color-acento-oscuro: #8a6d18;
+  --color-acero: #b8c0c9;        /* gris acero */
+  --color-borde: #4a3a26;
+  --sombra: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --radio: 10px;
+  --transicion: 0.25s ease;
+}
+
+/* ---------- Reseteo básico ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Contenedor centrado reutilizable */
+.contenedor {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* =========================================================
+   CABECERA Y NAVEGACIÓN
+   ========================================================= */
+.cabecera {
+  background-color: var(--color-fondo-claro);
+  border-bottom: 2px solid var(--color-borde);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cabecera__interior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-acento);
+  letter-spacing: 0.5px;
+}
+
+/* Botón hamburguesa (visible solo en móvil) */
+.menu-boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-boton__linea {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-acento);
+  border-radius: 2px;
+  transition: var(--transicion);
+}
+
+/* En móvil el menú se oculta y se despliega con JS (clase .navegacion--abierta) */
+.navegacion {
+  display: none;
+  width: 100%;
+}
+
+.navegacion--abierta {
+  display: block;
+}
+
+.navegacion__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 0;
+}
+
+.navegacion__lista a {
+  display: block;
+  padding: 0.6rem 0.5rem;
+  border-radius: var(--radio);
+  color: var(--color-texto);
+  transition: var(--transicion);
+}
+
+.navegacion__lista a:hover {
+  background-color: var(--color-tarjeta);
+  color: var(--color-acento);
+}
+
+/* =========================================================
+   HÉROE / PORTADA
+   ========================================================= */
+.hero {
+  background:
+    linear-gradient(rgba(20, 15, 10, 0.75), rgba(20, 15, 10, 0.9)),
+    repeating-linear-gradient(45deg, #241b12 0, #241b12 12px, #2a2018 12px, #2a2018 24px);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero__titulo {
+  font-size: 2rem;
+  color: var(--color-acento);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero__texto {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: var(--color-texto-suave);
+}
+
+.hero__acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radio);
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transicion);
+}
+
+.boton--principal {
+  background-color: var(--color-acento);
+  color: #1c1712;
+}
+
+.boton--principal:hover {
+  background-color: var(--color-acento-oscuro);
+  color: var(--color-texto);
+}
+
+.boton--secundario {
+  background-color: transparent;
+  border-color: var(--color-acento);
+  color: var(--color-acento);
+}
+
+.boton--secundario:hover {
+  background-color: var(--color-acento);
+  color: #1c1712;
+}
+
+/* =========================================================
+   SECCIONES GENÉRICAS
+   ========================================================= */
+.seccion {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.seccion--intro {
+  background-color: var(--color-fondo-claro);
+}
+
+.seccion__titulo {
+  font-size: 1.6rem;
+  color: var(--color-acento);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.seccion__texto {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: var(--color-texto-suave);
+}
+
+/* =========================================================
+   TARJETAS RESUMEN (intro)
+   ========================================================= */
+.tarjetas-resumen {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.tarjeta-resumen {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-resumen__icono {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+}
+
+.tarjeta-resumen h3 {
+  color: var(--color-acento);
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================================
+   FILTROS (espadas)
+   ========================================================= */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filtro {
+  background-color: var(--color-tarjeta);
+  color: var(--color-texto-suave);
+  border: 1px solid var(--color-borde);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: var(--transicion);
+}
+
+.filtro:hover {
+  border-color: var(--color-acento);
+  color: var(--color-acento);
+}
+
+.filtro--activo {
+  background-color: var(--color-acento);
+  color: #1c1712;
+  border-color: var(--color-acento);
+}
+
+/* =========================================================
+   REJILLA DE TARJETAS (espadas / armaduras)
+   ========================================================= */
+.rejilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.carta {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform var(--transicion), border-color var(--transicion);
+  display: flex;
+  flex-direction: column;
+}
+
+.carta:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-acento);
+}
+
+.carta__imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: var(--color-fondo);
+}
+
+.carta__cuerpo {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.carta__titulo {
+  color: var(--color-acento);
+  font-size: 1.2rem;
+}
+
+.carta__etiqueta {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: var(--color-fondo);
+  color: var(--color-acero);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-borde);
+}
+
+.carta__texto {
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+}
+
+.carta__datos {
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  border-top: 1px solid var(--color-borde);
+  padding-top: 0.75rem;
+  margin-top: auto;
+}
+
+.carta__datos li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+}
+
+.carta__datos strong {
+  color: var(--color-texto);
+}
+
+/* =========================================================
+   GALERÍA DE COMBATE
+   ========================================================= */
+.combate-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.combate-galeria__item {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.combate-galeria__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.combate-galeria__item figcaption {
+  padding: 1rem;
+  color: var(--color-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* =========================================================
+   ENTRENAMIENTO (contador interactivo)
+   ========================================================= */
+.entrenamiento {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+}
+
+.entrenamiento h3 {
+  color: var(--color-acento);
+  margin-bottom: 1rem;
+}
+
+.entrenamiento__marcador {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.entrenamiento__marcador span {
+  color: var(--color-acento);
+  font-weight: bold;
+}
+
+.entrenamiento__botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* =========================================================
+   PIE DE PÁGINA
+   ========================================================= */
+.pie {
+  background-color: var(--color-fondo-claro);
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--color-texto-suave);
+  font-size: 0.9rem;
+}
+
+.pie__estado {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Clases de estado de conexión (se aplican desde JS en la Parte 2) */
+.pie__estado--online {
+  color: #7ec97e;
+}
+
+.pie__estado--offline {
+  color: #d98c8c;
+}
+
+/* =========================================================
+   MEDIA QUERIES · TABLET (a partir de 600px)
+   ========================================================= */
+@media (min-width: 600px) {
+  .hero__titulo {
+    font-size: 2.6rem;
+  }
+
+  .hero__acciones {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .entrenamiento__botones {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tarjetas-resumen {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rejilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .combate-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================================================
+   MEDIA QUERIES · ESCRITORIO (a partir de 900px)
+   ========================================================= */
+@media (min-width: 900px) {
+  /* El botón hamburguesa se oculta y el menú se muestra en horizontal */
+  .menu-boton {
+    display: none;
+  }
+
+  .navegacion {
+    display: block;
+    width: auto;
+  }
+
+  .navegacion__lista {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .seccion__titulo {
+    font-size: 2rem;
+  }
+
+  .rejilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Guerrero defendiéndose tras un escudo">
+  <rect width="300" height="200" fill="#2a2018"/>
+  <circle cx="170" cy="65" r="18" fill="#b8c0c9"/>
+  <rect x="158" y="83" width="24" height="55" rx="6" fill="#5a4a32"/>
+  <path d="M120 70 L150 78 V110 C150 130 135 140 120 146 C105 140 90 130 90 110 V78 Z" fill="#322619" stroke="#c9a227" stroke-width="3"/>
+  <circle cx="120" cy="108" r="5" fill="#c9a227"/>
+  <line x1="170" y1="138" x2="158" y2="180" stroke="#5a4a32" stroke-width="8"/>
+  <line x1="170" y1="138" x2="188" y2="180" stroke="#5a4a32" stroke-width="8"/>
+  <text x="150" y="196" fill="#c2b29a" font-size="11" text-anchor="middle" font-family="serif">Defensa con escudo</text>
+</svg>

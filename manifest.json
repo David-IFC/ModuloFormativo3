@@ -1,0 +1,26 @@
+{
+  "name": "Acero y Honor · Combate Medieval",
+  "short_name": "Acero y Honor",
+  "description": "Web PWA sobre combate medieval: tipos de espadas, armaduras y técnicas de lucha.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c1712",
+  "theme_color": "#3a2a1a",
+  "icons": [
+    {
+      "src": "img/icono-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icono-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

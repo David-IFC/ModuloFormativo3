@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" role="img" aria-label="Icono de la aplicación Acero y Honor">
+  <rect width="192" height="192" rx="32" fill="#1c1712"/>
+  <path d="M96 24 L156 44 V96 C156 138 126 162 96 172 C66 162 36 138 36 96 V44 Z" fill="#322619" stroke="#c9a227" stroke-width="6"/>
+  <line x1="64" y1="68" x2="128" y2="132" stroke="#b8c0c9" stroke-width="8" stroke-linecap="round"/>
+  <line x1="128" y1="68" x2="64" y2="132" stroke="#b8c0c9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="96" cy="100" r="10" fill="#c9a227"/>
+</svg>

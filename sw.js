@@ -7,7 +7,7 @@
    ========================================================= */
 
 // Nombre y versión de la caché. Cambiar la versión fuerza una actualización.
-const NOMBRE_CACHE = "acero-y-honor-v1";
+const NOMBRE_CACHE = "acero-y-honor-v2";
 
 // Lista de archivos que se guardan para el uso offline.
 const ARCHIVOS = [
@@ -33,7 +33,9 @@ const ARCHIVOS = [
   "./img/gambeson.svg",
   "./img/brigantina.svg",
   "./img/icono-192.svg",
-  "./img/icono-512.svg"
+  "./img/icono-512.svg",
+  "./img/icono-192.png",
+  "./img/icono-512.png"
 ];
 
 /*

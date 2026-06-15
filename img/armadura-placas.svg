@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Armadura de placas completa">
+  <rect width="300" height="180" fill="#241b12"/>
+  <circle cx="150" cy="42" r="16" fill="#cfd6dd" stroke="#8a929a" stroke-width="2"/>
+  <rect x="146" y="34" width="8" height="14" fill="#5a4a32"/>
+  <path d="M120 62 H180 L188 80 V120 H112 V80 Z" fill="#cfd6dd" stroke="#8a929a" stroke-width="2"/>
+  <line x1="150" y1="62" x2="150" y2="120" stroke="#8a929a" stroke-width="2"/>
+  <rect x="118" y="122" width="64" height="14" rx="3" fill="#b8c0c9" stroke="#8a929a"/>
+  <rect x="124" y="138" width="22" height="34" rx="4" fill="#cfd6dd" stroke="#8a929a"/>
+  <rect x="154" y="138" width="22" height="34" rx="4" fill="#cfd6dd" stroke="#8a929a"/>
+</svg>

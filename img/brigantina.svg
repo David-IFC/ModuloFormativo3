@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Brigantina de placas remachadas">
+  <rect width="300" height="180" fill="#241b12"/>
+  <path d="M115 45 H185 L195 65 V150 H105 V65 Z" fill="#3a2e20" stroke="#c9a227" stroke-width="2"/>
+  <g fill="#b8c0c9">
+    <rect x="115" y="68" width="22" height="22" rx="2"/><rect x="142" y="68" width="22" height="22" rx="2"/><rect x="169" y="68" width="16" height="22" rx="2"/>
+    <rect x="115" y="95" width="22" height="22" rx="2"/><rect x="142" y="95" width="22" height="22" rx="2"/><rect x="169" y="95" width="16" height="22" rx="2"/>
+    <rect x="115" y="122" width="22" height="22" rx="2"/><rect x="142" y="122" width="22" height="22" rx="2"/><rect x="169" y="122" width="16" height="22" rx="2"/>
+  </g>
+  <g fill="#c9a227">
+    <circle cx="126" cy="79" r="2"/><circle cx="153" cy="79" r="2"/><circle cx="177" cy="79" r="2"/>
+    <circle cx="126" cy="106" r="2"/><circle cx="153" cy="106" r="2"/><circle cx="177" cy="106" r="2"/>
+  </g>
+</svg>

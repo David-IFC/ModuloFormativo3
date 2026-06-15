@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Espada larga de dos manos">
+  <rect width="300" height="180" fill="#241b12"/>
+  <line x1="30" y1="150" x2="245" y2="35" stroke="#b8c0c9" stroke-width="9" stroke-linecap="round"/>
+  <line x1="240" y1="40" x2="255" y2="28" stroke="#e8eef3" stroke-width="9" stroke-linecap="round"/>
+  <line x1="45" y1="128" x2="78" y2="158" stroke="#c9a227" stroke-width="9" stroke-linecap="round"/>
+  <line x1="30" y1="150" x2="8" y2="166" stroke="#5a4a32" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="6" cy="168" r="8" fill="#c9a227"/>
+</svg>

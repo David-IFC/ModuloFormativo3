@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Mandoble o espadón de dos manos">
+  <rect width="300" height="180" fill="#241b12"/>
+  <line x1="28" y1="152" x2="252" y2="30" stroke="#b8c0c9" stroke-width="10" stroke-linecap="round"/>
+  <line x1="246" y1="35" x2="262" y2="23" stroke="#e8eef3" stroke-width="10" stroke-linecap="round"/>
+  <line x1="42" y1="130" x2="80" y2="162" stroke="#c9a227" stroke-width="10" stroke-linecap="round"/>
+  <line x1="60" y1="118" x2="72" y2="132" stroke="#c9a227" stroke-width="6" stroke-linecap="round"/>
+  <line x1="28" y1="152" x2="4" y2="170" stroke="#5a4a32" stroke-width="14" stroke-linecap="round"/>
+</svg>

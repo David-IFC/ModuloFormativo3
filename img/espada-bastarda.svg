@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Espada bastarda de mano y media">
+  <rect width="300" height="180" fill="#241b12"/>
+  <line x1="35" y1="148" x2="248" y2="38" stroke="#b8c0c9" stroke-width="8" stroke-linecap="round"/>
+  <line x1="243" y1="43" x2="258" y2="31" stroke="#e8eef3" stroke-width="8" stroke-linecap="round"/>
+  <line x1="48" y1="126" x2="76" y2="156" stroke="#c9a227" stroke-width="9" stroke-linecap="round"/>
+  <line x1="35" y1="148" x2="12" y2="164" stroke="#5a4a32" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="9" cy="166" r="7" fill="#c9a227"/>
+</svg>

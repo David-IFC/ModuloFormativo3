@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-label="Espada de una mano">
+  <rect width="300" height="180" fill="#241b12"/>
+  <line x1="40" y1="140" x2="230" y2="50" stroke="#b8c0c9" stroke-width="8" stroke-linecap="round"/>
+  <line x1="225" y1="55" x2="240" y2="44" stroke="#e8eef3" stroke-width="8" stroke-linecap="round"/>
+  <line x1="55" y1="120" x2="80" y2="148" stroke="#c9a227" stroke-width="9" stroke-linecap="round"/>
+  <line x1="40" y1="140" x2="22" y2="153" stroke="#5a4a32" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="18" cy="156" r="7" fill="#c9a227"/>
+</svg>
